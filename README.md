@@ -4,11 +4,11 @@ This is a starter pack for building TypeScript applications using Parcel along w
 
 # Todo
 
-[] Prepare start boiler template in HTML
-[] Prepare custom UIKit with Sass
-[] Add Typescript
-[] Add ESLint and Prettier
-[] Prepare project schema
+- [ ] Prepare start boiler template in HTML
+- [ ] Prepare custom UIKit with Sass
+- [ ] Add Typescript
+- [ ] Add ESLint and Prettier
+- [ ] Prepare project schema
 
 # Usage
 
