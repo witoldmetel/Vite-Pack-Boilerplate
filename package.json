@@ -1,15 +1,28 @@
 {
 	"name": "ts-parcel-boilerplate",
 	"version": "1.0.0",
-	"description": "",
+	"description": "Starter pack for building TypeScript apps",
 	"main": "index.js",
 	"scripts": {
-		"start": "npm run clean && parcel public/index.html --out-dir development -p 3000",
+		"start": "npm run clean && parcel public/index.html --out-dir development -p 8080",
 		"build": "parcel build public/index.html --out-dir dist --public-url ./",
 		"clean": "rimraf ./development && rimraf -rf ./.cache"
 	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/witoldmetel/TS-Parcel-Boilerplate.git"
+	},
+	"keywords": [
+		"parcel",
+		"typescript",
+		"sass"
+	],
 	"author": "Witold Metel",
-	"license": "ISC",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/witoldmetel/TS-Parcel-Boilerplate/issues"
+	},
+	"homepage": "https://github.com/witoldmetel/TS-Parcel-Boilerplate#readme",
 	"devDependencies": {
 		"@babel/core": "^7.9.0",
 		"@babel/plugin-transform-runtime": "^7.9.0",
