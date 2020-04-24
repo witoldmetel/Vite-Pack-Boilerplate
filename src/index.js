@@ -1,3 +1,9 @@
 import './style.scss';
 
-console.log('it work');
+const App = () => {
+	return (document.getElementById(
+		'root'
+	).innerHTML = `<div class="uk-container">TEST</div>`);
+};
+
+App();
