@@ -1,6 +1,6 @@
 # TS Parcel Boilerplate
 
-This is a minimal boilerplate example using Parcel along with Sass support. It also includes UIkit.
+This is a minimal boilerplate example using TypeScript and Parcel along with Sass support. It also includes UIkit.
 
 # Todo
 
