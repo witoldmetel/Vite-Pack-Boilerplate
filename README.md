@@ -1,6 +1,6 @@
 # TS Parcel Boilerplate
 
-This is a starter pack for building TypeScript applications using Parcel along with Babel and Sass.
+This is a minimal boilerplate example using Parcel along with Sass support. It also includes UIkit.
 
 # Todo
 
