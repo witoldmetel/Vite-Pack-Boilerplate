@@ -2,6 +2,14 @@
 
 This is a starter pack for building TypeScript applications using Parcel along with Babel and Sass.
 
+# Todo
+
+[] Prepare start boiler template in HTML
+[] Prepare custom UIKit with Sass
+[] Add Typescript
+[] Add ESLint and Prettier
+[] Prepare project schema
+
 # Usage
 
 Install dependencies
