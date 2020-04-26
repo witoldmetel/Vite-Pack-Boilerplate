@@ -1,9 +1,6 @@
-import './style.scss';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-const App = () => {
-	return (document.getElementById(
-		'root'
-	).innerHTML = `<div class="uk-container">TEST</div>`);
-};
+import App from '../src/components/App';
 
-App();
+ReactDOM.render(<App />, document.getElementById('root'));
