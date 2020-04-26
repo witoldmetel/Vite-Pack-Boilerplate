@@ -6,9 +6,11 @@ This is a minimal boilerplate example using TypeScript and Parcel along with Sas
 
 - [ ] Prepare start boiler template in HTML
 - [ ] Prepare custom UIKit with Sass
-- [ ] Add Typescript
-- [ ] Add ESLint and Prettier
+- [x] Add Typescript
+- [x] Add ESLint and Prettier
+- [ ] Add ESLint rules
 - [ ] Prepare project schema
+- [ ] Add unit tests (Jest)
 
 # Usage
 
