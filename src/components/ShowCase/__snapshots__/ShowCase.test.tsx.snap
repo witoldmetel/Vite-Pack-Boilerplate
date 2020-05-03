@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ShowCase> renders correctly 1`] = `
+<div
+  className="showcase"
+>
+  <div
+    className="gif-container"
+  >
+    <img
+      src="https://thumbs.gfycat.com/ImpishUnequaledIchneumonfly-size_restricted.gif"
+    />
+  </div>
+  <div
+    className="content"
+  >
+    <h1>
+      React + TypeScript + Parcel
+    </h1>
+    <h3>
+      Simple Boilerplate
+    </h3>
+    <a
+      className="btn"
+      href="#about"
+    >
+      Read More
+    </a>
+  </div>
+</div>
+`;

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
-import { ShowCase } from './ShowCase';
-import { Aboat } from './Aboat';
+import { Aboat, ShowCase } from './index';
 
 import './App.scss';
 

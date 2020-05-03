@@ -8,7 +8,7 @@ describe('<Aboat>', () => {
     shallow(<Aboat />);
   });
 
-  it('tt renders correctly', () => {
+  it('renders correctly', () => {
     const wrapper = shallow(<Aboat />);
 
     expect(wrapper).toMatchSnapshot();
