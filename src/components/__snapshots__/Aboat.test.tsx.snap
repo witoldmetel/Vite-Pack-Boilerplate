@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Aboat> tt renders correctly 1`] = `
+<div
+  id="about"
+>
+  <h1>
+    About
+  </h1>
+  <p>
+    This is a minimal boilerplate example using React, TypeScript and Parcel along with Sass support. It also includes UIkit.
+  </p>
+  <h2>
+    Follow Me On Social Media
+  </h2>
+  <div
+    className="social"
+  >
+    <a
+      href="https://github.com/witoldmetel"
+      target="_blank"
+      uk-icon="github"
+    />
+    <a
+      href="https://www.linkedin.com/in/witoldmetel"
+      target="_blank"
+      uk-icon="linkedin"
+    />
+  </div>
+</div>
+`;

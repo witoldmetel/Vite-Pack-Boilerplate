@@ -1,10 +1,14 @@
-import React from 'react';
+import * as React from 'react';
 import { shallow } from 'enzyme';
 
 import { Aboat } from './Aboat';
 
-describe('Hello, Enzyme!', () => {
-  it('It renders correctly', () => {
+describe('<Aboat>', () => {
+  it('renders without crashing', () => {
+    shallow(<Aboat />);
+  });
+
+  it('tt renders correctly', () => {
     const wrapper = shallow(<Aboat />);
 
     expect(wrapper).toMatchSnapshot();
