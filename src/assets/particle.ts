@@ -19,9 +19,8 @@ export default function particle(particle: p5) {
 
     display() {
       particle.noStroke();
-      particle.fill('rgba(255,255,255,0.5');
+      particle.fill('rgba(255, 255, 255, 0.5');
       particle.circle(this.position.x, this.position.y, this.size);
-      // particle.ellipse(this.position.x, this.position.y, this.diameter, this.diameter);
     }
 
     detectEdges() {
@@ -32,6 +31,17 @@ export default function particle(particle: p5) {
       if (this.position.y < 0 || this.position.y > particle.height) {
         this.velocity.y *= -1;
       }
+    }
+
+    connectParticles(particles: Particle[]) {
+      particles.forEach((item) => {
+        const distance = particle.dist(this.position.x, this.position.y, item.position.x, item.position.y);
+
+        if (distance < 120) {
+          particle.stroke('rgba(255, 255, 255, 0.1');
+          particle.line(this.position.x, this.position.y, item.position.x, item.position.y);
+        }
+      });
     }
   }
 
@@ -50,9 +60,10 @@ export default function particle(particle: p5) {
   particle.draw = () => {
     particle.background(55, 100, 145);
 
-    for (let i = 0; i < particles.length; i++) {
-      particles[i].move();
-      particles[i].display();
-    }
+    particles.forEach((particle, index) => {
+      particle.move();
+      particle.display();
+      particle.connectParticles(particles.slice(index));
+    });
   };
 }
