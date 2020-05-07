@@ -29,9 +29,24 @@ export class Particle extends Component {
       const size = 10;
 
       particle.draw = () => {
+        // Draw particle
         particle.noStroke();
+        particle.background(55, 100, 145);
         particle.fill('rgba(255,255,255,0.5');
         particle.circle(position.x, position.y, size);
+
+        // Circles velocity
+        const velocity = particle.createVector(particle.random(-2, 2), particle.random(-2, 2));
+
+        // Jiggling randomly on the horizontal axis
+        position.x += velocity.x;
+        // Moving up at a constant speed
+        position.y += velocity.y;
+
+        // Reset to the bottom
+        if (position.y < 0) {
+          position.y = 750;
+        }
       };
     });
   }
