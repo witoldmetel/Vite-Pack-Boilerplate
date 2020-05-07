@@ -5,11 +5,9 @@ exports[`<ShowCase> renders correctly 1`] = `
   className="showcase"
 >
   <div
-    className="gif-container"
+    className="particles-container"
   >
-    <img
-      src="https://thumbs.gfycat.com/ImpishUnequaledIchneumonfly-size_restricted.gif"
-    />
+    <Particle />
   </div>
   <div
     className="content"
@@ -17,9 +15,9 @@ exports[`<ShowCase> renders correctly 1`] = `
     <h1>
       React + TypeScript + Parcel
     </h1>
-    <h3>
+    <h2>
       Simple Boilerplate
-    </h3>
+    </h2>
     <a
       className="btn"
       href="#about"
