@@ -2,25 +2,36 @@ import p5 from 'p5';
 
 export default function particle(particle: p5) {
   class Particle {
-    private x: number;
-    private y: number;
-    private diameter: number;
-    private speed: number;
+    private position: { x: number; y: number; add: (velocity: any) => void };
+    private size: number;
+    private velocity: { x: number; y: number };
 
     constructor() {
-      this.x = particle.random(particle.width);
-      this.y = particle.random(particle.height);
-      this.diameter = particle.random(10, 30);
-      this.speed = 1;
+      this.position = particle.createVector(particle.random(0, particle.width), particle.random(0, particle.height));
+      this.size = particle.random(10, 50);
+      this.velocity = particle.createVector(particle.random(-2, 2), particle.random(-2, 2));
     }
 
     move() {
-      this.x += particle.random(-this.speed, this.speed);
-      this.y += particle.random(-this.speed, this.speed);
+      this.position.add(this.velocity);
+      this.detectEdges();
     }
 
     display() {
-      particle.ellipse(this.x, this.y, this.diameter, this.diameter);
+      particle.noStroke();
+      particle.fill('rgba(255,255,255,0.5');
+      particle.circle(this.position.x, this.position.y, this.size);
+      // particle.ellipse(this.position.x, this.position.y, this.diameter, this.diameter);
+    }
+
+    detectEdges() {
+      if (this.position.x < 0 || this.position.x > particle.width) {
+        this.velocity.x *= -1;
+      }
+
+      if (this.position.y < 0 || this.position.y > particle.height) {
+        this.velocity.y *= -1;
+      }
     }
   }
 
@@ -36,33 +47,8 @@ export default function particle(particle: p5) {
     }
   };
 
-  // Circles position
-  const position = particle.createVector(particle.random(0, window.innerWidth), particle.random(0, window.innerHeight));
-
-  // Circles size
-  const size = 10;
-
   particle.draw = () => {
-    // Draw particle
-    particle.noStroke();
     particle.background(55, 100, 145);
-    particle.fill('rgba(255,255,255,0.5');
-    particle.circle(position.x, position.y, size);
-
-    // // Circles velocity
-    // const velocity = particle.createVector(particle.random(-2, 2), particle.random(-2, 2));
-
-    // position.x += velocity.x;
-    // position.y += velocity.y;
-
-    // // Detect edges
-    // if (position.x < 0 || position.x > particle.width) {
-    //   velocity.x *= -1;
-    // }
-
-    // if (position.y < 0 || position.y > particle.height) {
-    //   velocity.y *= -1;
-    // }
 
     for (let i = 0; i < particles.length; i++) {
       particles[i].move();
