@@ -38,14 +38,16 @@ export class Particle extends Component {
         // Circles velocity
         const velocity = particle.createVector(particle.random(-2, 2), particle.random(-2, 2));
 
-        // Jiggling randomly on the horizontal axis
         position.x += velocity.x;
-        // Moving up at a constant speed
         position.y += velocity.y;
 
-        // Reset to the bottom
-        if (position.y < 0) {
-          position.y = 750;
+        // Detect edges
+        if (position.x < 0 || position.x > particle.width) {
+          velocity.x *= -1;
+        }
+
+        if (position.y < 0 || position.y > particle.height) {
+          velocity.y *= -1;
         }
       };
     });
