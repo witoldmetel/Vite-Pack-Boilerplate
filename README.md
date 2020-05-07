@@ -1,6 +1,6 @@
 # TS Parcel Boilerplate
 
-This is a minimal boilerplate example using React, TypeScript and Parcel along with Sass support. It also includes UIkit.
+This is a minimal boilerplate example using React, TypeScript and Parcel along with Sass support.
 
 # Built-in dependencies
 
@@ -10,7 +10,6 @@ This is a minimal boilerplate example using React, TypeScript and Parcel along w
 - Prettier (2.0.5) + TSLint config
 - Jest (25.5+) and enzyme (3.11)
 - sass (1.26)
-- UIkit (3.4.2)
 
 # Usage
 
