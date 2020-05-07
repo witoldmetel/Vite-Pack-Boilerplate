@@ -5,7 +5,6 @@
   justify-content: center;
   text-align: center;
   color: #fff;
-  background-color: rgb(55, 100, 145);
   padding: 0 20px;
 
   .particles-container {
@@ -23,7 +22,7 @@
       width: 100%;
       top: 0;
       left: 0;
-      background: rgba(0, 0, 0, 0.4);
+      background: rgba(0, 0, 0, 0.5);
       position: absolute;
     }
   }
@@ -32,23 +31,24 @@
     z-index: 2;
 
     h1,
-    h3 {
-      color: white;
+    h2 {
+      color: #efdc05;
       font-weight: 500;
+      -webkit-text-stroke: 1px black;
     }
 
     .btn {
       display: inline-block;
       padding: 10px 30px;
       background: var(--primary-color);
-      color: #fff;
+      color: #efdc05;
       border-radius: 5px;
-      border: solid #fff 1px;
+      border: solid #efdc05 1px;
       margin-top: 25px;
       opacity: 0.7;
 
       &:hover {
-        transform: scale(0.98);
+        transform: scale(0.9);
       }
     }
   }

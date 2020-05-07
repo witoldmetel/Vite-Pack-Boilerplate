@@ -19,7 +19,7 @@ export default function particle(particle: p5) {
 
     display() {
       particle.noStroke();
-      particle.fill('rgba(255, 255, 255, 0.5');
+      particle.fill('#E53A40');
       particle.circle(this.position.x, this.position.y, this.size);
     }
 
@@ -38,7 +38,7 @@ export default function particle(particle: p5) {
         const distance = particle.dist(this.position.x, this.position.y, item.position.x, item.position.y);
 
         if (distance < 120) {
-          particle.stroke('rgba(255, 255, 255, 0.1');
+          particle.stroke('#E53A40');
           particle.line(this.position.x, this.position.y, item.position.x, item.position.y);
         }
       });
@@ -58,7 +58,7 @@ export default function particle(particle: p5) {
   };
 
   particle.draw = () => {
-    particle.background(55, 100, 145);
+    particle.background('#30A9DE');
 
     particles.forEach((particle, index) => {
       particle.move();

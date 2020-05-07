@@ -13,7 +13,7 @@ export class ShowCase extends Component {
         </div>
         <div className="content">
           <h1>React + TypeScript + Parcel</h1>
-          <h3>Simple Boilerplate</h3>
+          <h2>Simple Boilerplate</h2>
           <a href="#about" className="btn">
             Read More
           </a>
