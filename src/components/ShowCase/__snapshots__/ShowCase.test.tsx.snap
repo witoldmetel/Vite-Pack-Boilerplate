@@ -7,7 +7,7 @@ exports[`<ShowCase> renders correctly 1`] = `
   <div
     className="particles-container"
   >
-    <Particle />
+    <ParticleComponent />
   </div>
   <div
     className="content"

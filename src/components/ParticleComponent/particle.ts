@@ -8,8 +8,8 @@ export default function particle(particle: p5) {
 
     constructor() {
       this.position = particle.createVector(particle.random(0, particle.width), particle.random(0, particle.height));
-      this.size = particle.random(10, 50);
-      this.velocity = particle.createVector(particle.random(-2, 2), particle.random(-2, 2));
+      this.size = particle.random(5, 20);
+      this.velocity = particle.createVector(particle.random(-1, 1), particle.random(-1, 1));
     }
 
     move() {
@@ -19,7 +19,7 @@ export default function particle(particle: p5) {
 
     display() {
       particle.noStroke();
-      particle.fill('#E53A40');
+      particle.fill('white');
       particle.circle(this.position.x, this.position.y, this.size);
     }
 
@@ -38,7 +38,7 @@ export default function particle(particle: p5) {
         const distance = particle.dist(this.position.x, this.position.y, item.position.x, item.position.y);
 
         if (distance < 120) {
-          particle.stroke('#E53A40');
+          particle.stroke('white');
           particle.line(this.position.x, this.position.y, item.position.x, item.position.y);
         }
       });
@@ -58,7 +58,7 @@ export default function particle(particle: p5) {
   };
 
   particle.draw = () => {
-    particle.background('#30A9DE');
+    particle.background('black');
 
     particles.forEach((particle, index) => {
       particle.move();

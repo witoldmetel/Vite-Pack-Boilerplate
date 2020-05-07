@@ -22,8 +22,12 @@
       width: 100%;
       top: 0;
       left: 0;
-      background: rgba(0, 0, 0, 0.5);
+      background-attachment: fixed;
+      background-position: right;
+      background-size: cover;
+      background-image: url('../../assets/graphics/background_img.jpg');
       position: absolute;
+      opacity: 0.75;
     }
   }
 

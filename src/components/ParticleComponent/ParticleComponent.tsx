@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import p5 from 'p5';
 
-import particle from '../../assets/particle';
+import particle from './particle';
 
-export class Particle extends Component {
+export class ParticleComponent extends Component {
   private particleRef: React.RefObject<HTMLInputElement>;
 
   public constructor(props: any) {

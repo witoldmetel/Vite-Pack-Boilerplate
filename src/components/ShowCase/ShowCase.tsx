@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Particle } from '../Particle/Particle';
+import { ParticleComponent } from '../ParticleComponent/ParticleComponent';
 
 import './ShowCase.scss';
 
@@ -9,7 +9,7 @@ export class ShowCase extends Component {
     return (
       <div className="showcase">
         <div className="particles-container">
-          <Particle />
+          <ParticleComponent />
         </div>
         <div className="content">
           <h1>React + TypeScript + Parcel</h1>
