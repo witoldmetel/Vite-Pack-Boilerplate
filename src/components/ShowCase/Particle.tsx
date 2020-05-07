@@ -6,43 +6,37 @@ import './Particle.scss';
 export class Particle extends Component {
   private particlesRef: React.RefObject<HTMLInputElement>;
 
-  public constructor(props: any) {
+  constructor(props: any) {
     super(props);
-    this.p5 = new p5();
 
-    console.log(this.p5);
-
-    this.position = this.p5.createVector(this.p5.random(this.p5.width), this.p5.random(this.p5.height));
+    this.particlesRef = React.createRef();
   }
 
-  // public componentDidMount() {
-  //   const node = this.particlesRef.current;
+  componentDidMount() {
+    new p5((particle) => {
+      // Init playground for P5 circles
+      particle.setup = () => {
+        particle.createCanvas(window.innerWidth, window.innerHeight).parent(this.particlesRef.current);
+      };
 
-  //   new p5(this.sketch, node as HTMLInputElement);
-  // }
+      // Circles position
+      const position = particle.createVector(
+        particle.random(0, window.innerWidth),
+        particle.random(0, window.innerHeight),
+      );
 
-  // private sketch = (sketch: p5) => {
-  //   // Init playground for P5 circles
-  //   sketch.setup = () => {
-  //     sketch.createCanvas(window.innerWidth, window.innerHeight);
-  //   };
+      // Circles size
+      const size = 10;
 
-  //   // Circles position
-  //   const position = sketch.createVector(sketch.random(sketch.width), sketch.random(sketch.height));
-
-  //   // Circles size
-  //   const size = 10;
-
-  //   sketch.draw = () => {
-  //     sketch.noStroke();
-  //     sketch.fill('rgba(255,255,255,0.5');
-  //     sketch.circle(position.x, position.y, size);
-  //   };
-  // };
-
-  // ref={this.particlesRef}
+      particle.draw = () => {
+        particle.noStroke();
+        particle.fill('rgba(255,255,255,0.5');
+        particle.circle(position.x, position.y, size);
+      };
+    });
+  }
 
   render() {
-    return <div className="particles-container"></div>;
+    return <div className="particles-container" ref={this.particlesRef}></div>;
   }
 }
