@@ -22,7 +22,9 @@ exports[`<ShowCase> renders correctly 1`] = `
       className="btn"
       href="#about"
     >
-      Read More
+      <p>
+        CHECK IT OUT!
+      </p>
     </a>
   </div>
 </div>
