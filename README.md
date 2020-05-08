@@ -49,6 +49,12 @@ Build assets for production
 yarn build
 ```
 
+Deploy page on GH-Pages
+
+```
+yarn deploy
+```
+
 # Demo Page
 
 https://witoldmetel.github.io/TS-Parcel-Boilerplate
