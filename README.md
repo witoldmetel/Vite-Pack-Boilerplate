@@ -48,3 +48,7 @@ Build assets for production
 ```
 yarn build
 ```
+
+# Demo Page
+
+https://witoldmetel.github.io/TS-Parcel-Boilerplate
