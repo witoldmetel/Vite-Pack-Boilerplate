@@ -66,4 +66,8 @@ export default function particle(particle: p5) {
       particle.connectParticles(particles.slice(index));
     });
   };
+
+  particle.windowResized = () => {
+    particle.resizeCanvas(window.innerWidth, window.innerHeight);
+  };
 }
