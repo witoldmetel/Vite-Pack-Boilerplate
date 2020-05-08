@@ -1,6 +1,7 @@
 #about {
   padding: 40px;
   text-align: center;
+  background-color: var(--primary-color);
 
   p {
     font-size: 1.2rem;
@@ -13,7 +14,23 @@
     color: var(--primary-color);
   }
 
-  .social a {
-    margin: 0 5px;
+  .about-section,
+  .social-section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+    h1 {
+      color: var(--secondary-color);
+    }
+
+    p {
+      color: var(--text-color);
+    }
+
+    a {
+      margin: 0 5px;
+    }
   }
 }
