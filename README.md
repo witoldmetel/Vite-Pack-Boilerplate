@@ -1,6 +1,8 @@
 # TS Parcel Boilerplate
 
-This is a minimal boilerplate example using React, TypeScript and Parcel along with Sass support.
+This is a minimal boilerplate using React and TypeScript along with Sass support. It's also possible to config firebase. Good for small projects and prototyping. Enjoy to use :)
+
+In case of issues and questions, feel free to add the question in [Issues](https://github.com/witoldmetel/TS-Parcel-Boilerplate/issues) page.
 
 # Built-in dependencies
 
@@ -10,6 +12,11 @@ This is a minimal boilerplate example using React, TypeScript and Parcel along w
 - Prettier (2.0.5) + TSLint config
 - Jest (25.5+) and enzyme (3.11)
 - sass (1.26)
+- firebase (7.18)
+
+# Demo Page
+
+https://witoldmetel.github.io/TS-Parcel-Boilerplate
 
 # Usage
 
@@ -67,7 +74,3 @@ You need to install gh-pages globally by adding "-g":
 ```
 npm install -g gh-pages --save-dev
 ```
-
-# Demo Page
-
-https://witoldmetel.github.io/TS-Parcel-Boilerplate
