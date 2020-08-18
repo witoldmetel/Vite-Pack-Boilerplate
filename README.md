@@ -13,6 +13,7 @@ In case of issues and questions, feel free to add the question in [Issues](https
 - Jest (25.5+) and enzyme (3.11)
 - sass (1.26)
 - firebase (7.18)
+- [typescript util for unit tests](https://github.com/Idered/typescript-expect-plugin)
 
 # Demo Page
 
