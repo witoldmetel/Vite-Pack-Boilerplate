@@ -17,7 +17,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <ShowCase />
-        <Aboat />
+        {/* <Aboat /> */}
       </React.Fragment>
     );
   }
