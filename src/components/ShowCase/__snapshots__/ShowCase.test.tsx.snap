@@ -5,11 +5,6 @@ exports[`<ShowCase> renders correctly 1`] = `
   className="showcase"
 >
   <div
-    className="particles-container"
-  >
-    <ParticleComponent />
-  </div>
-  <div
     className="content"
   >
     <h1>
