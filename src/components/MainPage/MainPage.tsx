@@ -3,19 +3,14 @@ import React, { Component } from 'react';
 
 import { GitHubIcon, LinkedinIcon } from '../../assets';
 
-import './ShowCase.scss';
+import './MainPage.scss';
 
-export class ShowCase extends Component {
+export class MainPage extends Component {
   render() {
     return (
       <div className="showcase">
         <section className="section section-top">
-          <div className="content rellax" data-rellax-speed="5">
-            <h1>React + TypeScript + Parcel</h1>
-            <a href="#" className="btn btn-primary">
-              Learn More
-            </a>
-          </div>
+          <div className="content rellax" data-rellax-speed="5" />
         </section>
 
         <section className="section section-stream">
@@ -71,19 +66,15 @@ export class ShowCase extends Component {
           </div>
         </section>
 
-        <footer className="footer" />
-        <ul>
-          <li>
-            <a href="https://github.com/witoldmetel" target="_blank">
-              <GitHubIcon />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/witoldmetel" target="_blank">
-              <LinkedinIcon />
-            </a>
-          </li>
-        </ul>
+        <footer className="footer">
+          <a href="https://github.com/witoldmetel" target="_blank">
+            <GitHubIcon />
+          </a>
+
+          <a href="https://www.linkedin.com/in/witoldmetel" target="_blank">
+            <LinkedinIcon />
+          </a>
+        </footer>
       </div>
     );
   }

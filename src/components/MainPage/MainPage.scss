@@ -1,75 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-
-:root {
-  --primary-color: #2d2254;
-  --secondary--color: #f5c42f;
-  --text-color: #c5bbec;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  background: var(--primary-color);
-  color: #fff;
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-h1,
-h2,
-h3,
-p {
-  margin-bottom: 10px;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
-}
-
-ul {
-  list-style: none;
-}
-
-.btn {
-  display: inline-block;
-  border: 0;
-  background: var(--secondary--color);
-  color: #fff;
-  border-radius: 20px;
-  padding: 8px 30px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-.btn:hover {
-  transform: scale(0.98);
-}
-
-.primary-text {
-  color: var(--primary-color);
-}
-
-.secondary-text {
-  color: var(--secondary--color);
-}
-
-.section {
-  position: relative;
-  padding: 0 20px;
-}
-
 /* Section Top */
 .section-top {
   min-height: 500px;
-  background: url('https://i.ibb.co/PhVR2Vh/bg1.png') no-repeat center center/cover;
+  background: url('../../assets//graphics/main.png') no-repeat center center/cover;
 }
 
 .section-top h1 {
@@ -87,7 +19,6 @@ ul {
 /* Section Stream */
 .section-stream {
   min-height: 700px;
-  background: url('https://i.ibb.co/bsX6RV0/bg2.png') no-repeat center center/cover;
 }
 
 .section-stream h2 {
@@ -186,5 +117,72 @@ ul {
 
   .footer ul {
     display: block;
+  }
+}
+
+.footer {
+  padding: 40px;
+  text-align: center;
+  background-color: var(--primary-color);
+
+  p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  h2 {
+    margin: 20px 0;
+    color: var(--primary-color);
+  }
+
+  .social-section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+    h1,
+    h2 {
+      color: var(--secondary-color);
+      font-weight: 500;
+      -webkit-text-stroke: 1px black;
+    }
+
+    p {
+      color: var(--text-color);
+    }
+
+    a {
+      margin: 0 5px;
+
+      &:hover {
+        color: var(--secondary-color);
+      }
+    }
+  }
+
+  .section-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    text-align: center;
+
+    .item {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+
+      h2 {
+        color: var(--secondary-color);
+        font-weight: 500;
+        -webkit-text-stroke: 1px black;
+      }
+
+      p {
+        color: var(--text-color);
+      }
+    }
   }
 }

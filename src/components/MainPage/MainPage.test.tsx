@@ -1,15 +1,15 @@
 import * as React from 'react';
 import { shallow } from 'enzyme';
 
-import { ShowCase } from './ShowCase';
+import { MainPage } from './MainPage';
 
-describe('<ShowCase>', () => {
+describe('<MainPage>', () => {
   it('renders without crashing', () => {
-    shallow(<ShowCase />);
+    shallow(<MainPage />);
   });
 
   it('renders correctly', () => {
-    const wrapper = shallow(<ShowCase />);
+    const wrapper = shallow(<MainPage />);
 
     expect(wrapper).toMatchSnapshot();
   });
