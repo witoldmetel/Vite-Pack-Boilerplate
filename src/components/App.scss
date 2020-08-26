@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@font-face {
+  font-family: 'primary-font';
+  src: url(../../public/HoboStd.otf);
+}
 
 :root {
   --primary-color: #1b211f;
@@ -13,55 +16,56 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'primary-font', sans-serif;
   background: var(--primary-color);
   color: #fff;
   font-size: 18px;
   line-height: 1.6;
-}
 
-h1,
-h2,
-h3,
-p {
-  margin-bottom: 10px;
-}
+  h1,
+  h2,
+  h3,
+  p {
+    font-family: 'primary-font', sans-serif;
+    margin-bottom: 10px;
+  }
 
-a {
-  text-decoration: none;
-  color: #fff;
-}
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
 
-ul {
-  list-style: none;
-}
+  ul {
+    list-style: none;
+  }
 
-.btn {
-  display: inline-block;
-  border: 0;
-  background: var(--secondary--color);
-  color: #fff;
-  border-radius: 20px;
-  padding: 8px 30px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 16px;
-  margin-top: 10px;
-}
+  .btn {
+    display: inline-block;
+    border: 0;
+    background: var(--secondary--color);
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
 
-.btn:hover {
-  transform: scale(0.98);
-}
+    &:hover {
+      transform: scale(0.98);
+    }
+  }
 
-.primary-text {
-  color: var(--primary-color);
-}
+  .primary-text {
+    color: var(--primary-color);
+  }
 
-.secondary-text {
-  color: var(--secondary--color);
-}
+  .secondary-text {
+    color: var(--secondary--color);
+  }
 
-.section {
-  position: relative;
-  padding: 0 20px;
+  .section {
+    position: relative;
+    padding: 0 20px;
+  }
 }
