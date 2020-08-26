@@ -54,8 +54,12 @@
     grid-gap: 30px;
     text-align: center;
 
-    p {
+    h2 {
       color: var(--text-color);
+    }
+
+    p {
+      color: var(--secondary--color);
     }
 
     .dot {
