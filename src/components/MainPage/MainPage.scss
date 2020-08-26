@@ -2,7 +2,10 @@
   /* Section Top */
   .section-top {
     min-height: 500px;
-    background: url('../../assets//graphics/main.png') no-repeat center center/cover;
+    background: url('../../assets//graphics/main.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     h1 {
       font-size: 70px;
