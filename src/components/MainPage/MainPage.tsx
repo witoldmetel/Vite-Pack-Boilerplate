@@ -13,7 +13,7 @@ export class MainPage extends Component {
           <div className="content rellax" data-rellax-speed="5" />
         </section>
 
-        <section className="section section-stream">
+        <section className="section section-main">
           <img
             className="play rellax"
             src="https://i.ibb.co/TvdbMhQ/play-button.png"
@@ -70,7 +70,6 @@ export class MainPage extends Component {
           <a href="https://github.com/witoldmetel" target="_blank">
             <GitHubIcon />
           </a>
-
           <a href="https://www.linkedin.com/in/witoldmetel" target="_blank">
             <LinkedinIcon />
           </a>
