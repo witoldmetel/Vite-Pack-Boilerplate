@@ -10,7 +10,11 @@ export class MainPage extends Component {
     return (
       <div className="showcase">
         <section className="section section-top">
-          <div className="content rellax" data-rellax-speed="5" />
+          <div className="content rellax" data-rellax-speed="5">
+            <h1 className="title first">React + TypeScript + Parcel</h1>
+            <h1 className="title second">Boilerplate</h1>
+          </div>
+          <div className="motto" />
         </section>
 
         <section className="section section-main">
