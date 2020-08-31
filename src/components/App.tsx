@@ -7,13 +7,13 @@ import firebaseConfig from '../config/firebase';
 import './App.scss';
 
 class App extends Component {
-  constructor(props) {
+  public constructor(props) {
     super(props);
 
     firebase.initializeApp(firebaseConfig);
   }
 
-  render() {
+  public render() {
     return <MainPage />;
   }
 }
