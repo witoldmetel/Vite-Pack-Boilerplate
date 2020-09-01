@@ -1,6 +1,6 @@
 {
   "name": "ts-parcel-boilerplate",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Starter pack for building TypeScript apps",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "build": "yarn lint && yarn test && yarn tailwind:css && parcel build public/index.html --no-cache --out-dir dist --public-url ./",
     "deploy": "gh-pages -b master -d dist",
     "clean": "rimraf ./development && rimraf -rf ./.cache",
-    "lint": "eslint --fix src/*",
+    "lint": "eslint --fix src --ext .ts,.tsx",
     "tailwind:css": "tailwind build src/tailwind.css -c tailwind.config.js -o src/index.css",
     "test": "jest --verbose",
     "test:watch": "jest --watchAll --verbose",
