@@ -20,11 +20,36 @@ export function MainPage() {
       </section>
 
       <section className="section section-main">
-        <div className="react-logo lax" data-lax-opacity="(vh*0.7) 1, 0 0" />
-        <div className="ts-logo lax" data-lax-opacity="(vh*0.7) 1, 0 0" />
-        <div className="parcel-logo lax" data-lax-opacity="(vh*0.7) 1, 0 0" />
-        <div className="sass-logo lax" data-lax-opacity="(vh*0.7) 1, 0 0" />
-        <div className="firebase-logo lax" data-lax-opacity="(vh*0.7) 1, 0 0" />
+        <a
+          href="https://reactjs.org/docs/getting-started.html"
+          target="_blank"
+          className="logo react-logo lax"
+          data-lax-opacity="(vh*0.7) 1, 0 0"
+        />
+        <a
+          href="https://www.typescriptlang.org/docs"
+          target="_blank"
+          className="logo ts-logo lax"
+          data-lax-opacity="(vh*0.7) 1, 0 0"
+        />
+        <a
+          href="https://parceljs.org/getting_started.html"
+          target="_blank"
+          className="logo parcel-logo lax"
+          data-lax-opacity="(vh*0.7) 1, 0 0"
+        />
+        <a
+          href="https://sass-lang.com/documentation"
+          target="_blank"
+          className="logo sass-logo lax"
+          data-lax-opacity="(vh*0.7) 1, 0 0"
+        />
+        <a
+          href="https://firebase.google.com/docs"
+          target="_blank"
+          className="logo firebase-logo lax"
+          data-lax-opacity="(vh*0.7) 1, 0 0"
+        />
         <div className="content">
           <div className="lax" data-lax-translate-y="0 0, vh -200">
             <h2 className="secondary-text">About</h2>
