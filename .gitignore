@@ -7,6 +7,9 @@ development
 dist
 yarn-error.log
 
+# ignore tailwind css styles
+src/index.css
+
 # IntelliJ
 *.iml
 /.idea
