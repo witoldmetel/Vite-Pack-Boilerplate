@@ -1,9 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@font-face {
+  font-family: 'regular-font';
+  src: url(../../public/fonts/NotoSansJP-Regular.otf);
+}
+
+@font-face {
+  font-family: 'bold-font';
+  src: url(../../public/fonts/NotoSansJP-Bold.otf);
+}
 
 :root {
-  --primary-color: #2d2254;
-  --secondary-color: #efdc05;
+  --primary-color: #1b211f;
+  --secondary--color: #e3d7bf;
   --text-color: #c5bbec;
+  --transparent-background: rgba(255, 255, 255, 0.3);
 }
 
 * {
@@ -13,18 +22,39 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.5;
-}
+  font-family: 'regular-font', sans-serif;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.6;
 
-a {
-  text-decoration: none;
-  color: var(--primary-color);
-}
+  h1,
+  h2,
+  h3,
+  p {
+    font-family: 'regular-font', sans-serif;
+    margin-bottom: 10px;
+  }
 
-h1 {
-  font-weight: 300;
-  font-size: 60px;
-  line-height: 1.2;
-  margin-bottom: 15px;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .primary-text {
+    color: var(--primary-color);
+  }
+
+  .secondary-text {
+    color: var(--secondary--color);
+  }
+
+  .section {
+    position: relative;
+    padding: 0 20px;
+  }
 }
