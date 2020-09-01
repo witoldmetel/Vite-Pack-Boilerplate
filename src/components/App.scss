@@ -1,12 +1,18 @@
 @font-face {
-  font-family: 'primary-font';
+  font-family: 'regular-font';
   src: url(../../public/fonts/NotoSansJP-Regular.otf);
+}
+
+@font-face {
+  font-family: 'bold-font';
+  src: url(../../public/fonts/NotoSansJP-Bold.otf);
 }
 
 :root {
   --primary-color: #1b211f;
   --secondary--color: #e3d7bf;
   --text-color: #c5bbec;
+  --transparent-background: rgba(255, 255, 255, 0.3);
 }
 
 * {
@@ -16,7 +22,7 @@
 }
 
 body {
-  font-family: 'primary-font', sans-serif;
+  font-family: 'regular-font', sans-serif;
   background: var(--primary-color);
   color: #fff;
   font-size: 18px;
@@ -26,7 +32,7 @@ body {
   h2,
   h3,
   p {
-    font-family: 'primary-font', sans-serif;
+    font-family: 'regular-font', sans-serif;
     margin-bottom: 10px;
   }
 

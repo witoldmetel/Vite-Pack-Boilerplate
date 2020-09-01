@@ -17,6 +17,7 @@
       align-items: center;
 
       .title {
+        font-family: 'bold-font', sans-serif;
         font-size: 50px;
         color: var(--secondary--color);
 
@@ -96,6 +97,17 @@
         left: 400px;
       }
 
+      &.tailwind-logo {
+        min-width: 150px;
+        min-height: 150px;
+        background: url('../../assets//graphics/tailwind-logo.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 360px;
+        left: 210px;
+      }
+
       &.firebase-logo {
         min-width: 150px;
         min-height: 150px;
@@ -115,7 +127,7 @@
       right: 70px;
 
       & > div {
-        background: rgba(255, 255, 255, 0.3);
+        background: var(--transparent-background);
         padding: 20px;
         margin-bottom: 20px;
         border-radius: 10px;
@@ -130,6 +142,7 @@
     text-align: center;
 
     h2 {
+      font-size: 35px;
       color: var(--text-color);
     }
 
@@ -143,7 +156,7 @@
     }
 
     & > div {
-      background: rgba(255, 255, 255, 0.3);
+      background: var(--transparent-background);
       padding: 20px;
       margin-bottom: 20px;
       border-radius: 10px;
@@ -151,16 +164,17 @@
   }
 
   .footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     border-top: var(--text-color) 1px solid;
     padding: 30px;
     margin-top: 20px;
 
-    ul {
+    .icons {
       display: flex;
-      align-items: center;
-      justify-content: space-around;
-      text-align: center;
+      justify-content: center;
     }
   }
 
@@ -188,7 +202,6 @@
 
   @media (max-width: 700px) {
     .section-top .content,
-    .section-stream .react-logo,
     .section-stream .content {
       position: static;
       width: 100%;
@@ -226,19 +239,9 @@
       min-height: 400px;
     }
 
-    .section-stream .react-logo {
-      width: 50%;
-      display: block;
-      margin: 30px auto;
-    }
-
     .section-grid {
       display: block;
       margin-top: 0;
-    }
-
-    .footer ul {
-      display: block;
     }
   }
 }

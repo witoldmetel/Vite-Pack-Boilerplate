@@ -4,11 +4,12 @@
   "description": "Starter pack for building TypeScript apps",
   "main": "index.js",
   "scripts": {
-    "start": "yarn clean && parcel public/index.html --out-dir development -p 8080",
-    "build": "yarn lint && yarn test && parcel build public/index.html --no-cache --out-dir dist --public-url ./",
+    "start": "yarn clean && yarn tailwind:css && parcel public/index.html --out-dir development -p 8080",
+    "build": "yarn lint && yarn test && yarn tailwind:css && parcel build public/index.html --no-cache --out-dir dist --public-url ./",
     "deploy": "gh-pages -b master -d dist",
     "clean": "rimraf ./development && rimraf -rf ./.cache",
     "lint": "eslint --fix src/*",
+    "tailwind:css": "tailwind build src/tailwind.css -c tailwind.config.js -o src/index.css",
     "test": "jest --verbose",
     "test:watch": "jest --watchAll --verbose",
     "test:coverage": "jest --verbose --coverage"
@@ -60,6 +61,7 @@
     "parcel-bundler": "1.12.4",
     "prettier": "2.0.5",
     "sass": "1.26.3",
+    "tailwindcss": "^1.7.6",
     "ts-jest": "25.4.0",
     "typescript-expect-plugin": "^0.3.1",
     "use-lax": "^3.2.0"
