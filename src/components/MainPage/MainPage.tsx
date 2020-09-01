@@ -20,7 +20,11 @@ export function MainPage() {
       </section>
 
       <section className="section section-main">
-        <div className="react-logo lax" data-lax-translate-x="0 0, vh -1000" data-lax-opacity="(vh*0.8) 1, 0 0" />
+        <div className="react-logo lax" data-lax-opacity="(vh*0.7) 1, 0 0" />
+        <div className="ts-logo lax" data-lax-opacity="(vh*0.7) 1, 0 0" />
+        <div className="parcel-logo lax" data-lax-opacity="(vh*0.7) 1, 0 0" />
+        <div className="sass-logo lax" data-lax-opacity="(vh*0.7) 1, 0 0" />
+        <div className="firebase-logo lax" data-lax-opacity="(vh*0.7) 1, 0 0" />
         <div className="content">
           <div className="lax" data-lax-translate-y="0 0, vh -200">
             <h2 className="secondary-text">About</h2>
@@ -32,7 +36,7 @@ export function MainPage() {
           <div className="lax" data-lax-translate-y="0 0, vh -200">
             <h2 className="secondary-text">Questions</h2>
             <p>
-              In case of issues and questions, feel free to add the question in{' '}
+              In case of issues and questions, feel free to add the question into{' '}
               <a href="https://github.com/witoldmetel/TS-Parcel-Boilerplate/issues" target="_blank">
                 Issues
               </a>{' '}
