@@ -3,29 +3,17 @@ module.exports = {
     browser: true,
     jest: true,
   },
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 6, // Allows for the parsing of modern ECMAScript features
+    ecmaVersion: 'latest', // Allows for the parsing of modern ECMAScript features
     sourceType: 'module', // Allows for the use of imports
     ecmaFeatures: {
       jsx: true, // Allows for the parsing of JSX
     },
     project: './tsconfig.json',
   },
-  //Specifies the ESLint parser
-  parser: '@typescript-eslint/parser',
-  /**
-   * 'plugin:react/recommended', // Uses the recommended rules from @eslint-plugin-react
-   * 'plugin:@typescript-eslint/recommended', // Uses the recommended rules from @typescript-eslint/eslint-plugin
-   * 'prettier/@typescript-eslint', // Uses eslint-config-prettier to disable ESLint rules from @typescript-eslint/eslint-plugin that would conflict with prettier
-   * 'plugin:prettier/recommended', // Enables eslint-plugin-prettier and displays prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
-   */
-  extends: [
-    'plugin:react/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
-    'plugin:prettier/recommended',
-  ],
-  plugins: ['react', 'prettier', 'import', 'require-path-exists', '@typescript-eslint'],
+  extends: ['plugin:react/recommended', 'plugin:prettier/recommended'],
+  plugins: ['parser', '@typescript-eslint/parser', 'require-path-exists', 'import'],
   rules: {
     'no-console': 1,
 
