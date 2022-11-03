@@ -3,32 +3,38 @@
 exports[`Link changes the class when hovered 1`] = `
 <a
   className="normal"
-  href="http://antfu.me"
+  href="https://www.linkedin.com/in/witoldmetel/"
   onMouseEnter={[Function]}
   onMouseLeave={[Function]}
+  rel="noreferrer"
+  target="_blank"
 >
-  Anthony Fu
+  Witold Metel
 </a>
 `;
 
 exports[`Link changes the class when hovered 2`] = `
 <a
   className="hovered"
-  href="http://antfu.me"
+  href="https://www.linkedin.com/in/witoldmetel/"
   onMouseEnter={[Function]}
   onMouseLeave={[Function]}
+  rel="noreferrer"
+  target="_blank"
 >
-  Anthony Fu
+  Witold Metel
 </a>
 `;
 
 exports[`Link changes the class when hovered 3`] = `
 <a
   className="normal"
-  href="http://antfu.me"
+  href="https://www.linkedin.com/in/witoldmetel/"
   onMouseEnter={[Function]}
   onMouseLeave={[Function]}
+  rel="noreferrer"
+  target="_blank"
 >
-  Anthony Fu
+  Witold Metel
 </a>
 `;

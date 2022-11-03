@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { ReactNode, useState } from 'react';
 
 const STATUS = {
   HOVERED: 'hovered',
@@ -6,8 +6,8 @@ const STATUS = {
 };
 
 type LinkProps = {
-  page: any;
-  children: any;
+  page: string;
+  children: ReactNode;
 };
 
 export const Link = ({ page, children }: LinkProps) => {
@@ -17,7 +17,14 @@ export const Link = ({ page, children }: LinkProps) => {
   const onMouseLeave = () => setStatus(STATUS.NORMAL);
 
   return (
-    <a className={status} href={page || '#'} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+    <a
+      className={status}
+      href={page || '#'}
+      target="_blank"
+      rel="noreferrer"
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
       {children}
     </a>
   );
