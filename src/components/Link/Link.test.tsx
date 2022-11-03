@@ -1,5 +1,6 @@
-import { Link } from './Link';
 import renderer from 'react-test-renderer';
+
+import { Link } from './Link';
 
 function toJson(component: renderer.ReactTestRenderer) {
   const result = component.toJSON();

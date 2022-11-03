@@ -15,54 +15,21 @@ export function MainPage() {
         <a
           href="https://reactjs.org/docs/getting-started.html"
           target="_blank"
-          className="logo react-logo lax"
-          data-lax-opacity="(vh*0.8) 1, 0 0"
+          className="logo react-logo "
           rel="noreferrer"
-        />
-        <a
-          href="https://www.typescriptlang.org/docs"
-          target="_blank"
-          className="logo ts-logo lax"
-          data-lax-opacity="(vh*0.8) 1, 0 0"
-          rel="noreferrer"
-        />
-        <a
-          href="https://parceljs.org/getting_started.html"
-          target="_blank"
-          className="logo parcel-logo lax"
-          data-lax-opacity="(vh*0.8) 1, 0 0"
-          rel="noreferrer"
-        />
-        <a
-          href="https://sass-lang.com/documentation"
-          target="_blank"
-          className="logo sass-logo lax"
-          data-lax-opacity="(vh*0.8) 1, 0 0"
-          rel="noreferrer"
-        />
-        <a
-          href="https://tailwindcss.com/docs/installation"
-          target="_blank"
-          className="logo tailwind-logo lax"
-          data-lax-opacity="(vh*0.8) 1, 0 0"
-          rel="noreferrer"
-        />
-        <a
-          href="https://firebase.google.com/docs"
-          target="_blank"
-          className="logo firebase-logo lax"
-          data-lax-opacity="(vh*0.8) 1, 0 0"
-          rel="noreferrer"
-        />
+        >
+          logo
+        </a>
+
         <div className="content">
-          <div className="lax" data-lax-translate-y="0 0, vh -200">
+          <div>
             <h2 className="secondary-text">About</h2>
             <p>
               This is a minimal boilerplate using React and TypeScript along with Sass support. It&lsquo;s also possible
               to config firebase and use Tailwind low-level utility classes. Good for small projects and prototyping.
             </p>
           </div>
-          <div className="lax" data-lax-translate-y="0 0, vh -200">
+          <div>
             <h2 className="secondary-text">Questions</h2>
             <p>
               In case of issues and questions, feel free to add the question into{' '}
@@ -83,7 +50,7 @@ export function MainPage() {
           </h2>
           <p>React is a library for building composable user interfaces.</p>
         </div>
-        <div className="lax" data-lax-translate-y="0 0, vh -200">
+        <div>
           <i className="fas fa-users fa-3x secondary-text"></i>
           <h2>
             TypeScript<span className="secondary-text dot">.</span>

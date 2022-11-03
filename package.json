@@ -66,10 +66,7 @@
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
-      "yarn tsc --noEmit'",
-      "yarn eslint --fix",
-      "yarn prettier --write",
-      "yarn test --watchAll=false --findRelatedTests --bail"
+      "yarn format"
     ]
   }
 }

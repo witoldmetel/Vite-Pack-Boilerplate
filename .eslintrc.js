@@ -17,7 +17,6 @@ module.exports = {
     react: {
       version: 'detect',
     },
-    'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
@@ -27,7 +26,7 @@ module.exports = {
       },
     },
   },
-  plugins: ['react', 'react-hooks', '@typescript-eslint', 'prettier', 'simple-import-sort'],
+  plugins: ['react', '@typescript-eslint', 'simple-import-sort'],
   extends: [
     'eslint:recommended',
     'prettier',
@@ -45,7 +44,6 @@ module.exports = {
     'consistent-return': 'off',
     'no-useless-escape': 'off',
     'no-nested-ternary': 'off',
-
     'jsx-a11y/anchor-is-valid': [
       'error',
       {
@@ -65,16 +63,6 @@ module.exports = {
      * IMPORT
      */
     'import/prefer-default-export': 'off',
-    'import/extensions': [
-      'error',
-      'ignorePackages',
-      {
-        js: 'never',
-        jsx: 'never',
-        ts: 'never',
-        tsx: 'never',
-      },
-    ],
 
     /**
      * PRETTIER
@@ -99,8 +87,6 @@ module.exports = {
     /**
      * REACT
      */
-    'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
     'react/react-in-jsx-scope': 'off',
     'react/destructuring-assignment': 'off',
     'react/require-default-props': 'off',
@@ -110,7 +96,7 @@ module.exports = {
   overrides: [
     // override "simple-import-sort" config
     {
-      files: ['*.ts', '*.tsx'],
+      files: ['*.js', '*.jsx', '*.ts', '*.tsx'],
       rules: {
         'simple-import-sort/imports': [
           'error',
