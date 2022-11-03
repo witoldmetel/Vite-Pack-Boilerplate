@@ -17,12 +17,7 @@ export const Link = ({ page, children }) => {
   };
 
   return (
-    <a
-      className={status}
-      href={page || '#'}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
-    >
+    <a className={status} href={page || '#'} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
       {children}
     </a>
   );

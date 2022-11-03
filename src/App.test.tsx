@@ -1,6 +1,5 @@
-import { describe, expect, it } from 'vitest';
-
 import App from './App';
+import { describe, expect, it } from 'vitest';
 import { render, screen, userEvent } from './utils/test-setup';
 
 describe('Simple working test', () => {
