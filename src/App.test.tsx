@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
-import App from './App';
 import { render, screen, userEvent } from './utils/test-setup';
+import App from './App';
 
 describe('Simple working test', () => {
   it('the title is visible', () => {
