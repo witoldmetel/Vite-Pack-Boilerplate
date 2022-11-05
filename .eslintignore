@@ -10,3 +10,4 @@ coverage
 !.vitepress
 test/core/src/self
 vite.config.ts
+postcss.config.js
