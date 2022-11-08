@@ -1,6 +1,6 @@
 {
-  "name": "ts-parcel-boilerplate",
-  "version": "3.0.0",
+  "name": "vite-pack-boilerplate",
+  "version": "1.0.0",
   "description": "Starter pack for building TypeScript apps",
   "scripts": {
     "dev": "vite",
@@ -12,7 +12,9 @@
     "coverage": "vitest run --coverage",
     "lint": "eslint --ext .js,.ts,.jsx,.tsx src",
     "lint:fix": "eslint --fix --ext .js,.ts,.jsx,.tsx src",
-    "format": "yarn run lint --fix & yarn prettier --write 'src/**/*.{js,jsx,ts,tsx}'"
+    "format": "yarn run lint --fix & yarn prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
+    "watch:css": "postcss src/input.css -o dist/style.css -w",
+    "build:css": "postcss src/input.css -o dist/style.css"
   },
   "repository": {
     "type": "git",
@@ -22,14 +24,16 @@
     "vite",
     "typescript",
     "react",
+    "vitest",
+    "postcss",
     "boilerplate"
   ],
   "author": "Witold Metel",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/witoldmetel/TS-Parcel-Boilerplate/issues"
+    "url": "https://github.com/witoldmetel/Vite-Pack-Boilerplate/issues"
   },
-  "homepage": "https://witoldmetel.github.io/TS-Parcel-Boilerplate",
+  "homepage": "",
   "dependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -46,6 +50,7 @@
     "@typescript-eslint/parser": "5.41.0",
     "@vitejs/plugin-react": "2.1.0",
     "@vitest/ui": "0.24.3",
+    "autoprefixer": "^10.4.13",
     "eslint": "8.9.0",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-prettier": "8.4.0",
@@ -57,13 +62,17 @@
     "husky": "8.0.1",
     "jsdom": "20.0.1",
     "lint-staged": "13.0.3",
+    "postcss": "^8.4.18",
+    "postcss-import": "^15.0.0",
+    "postcss-load-config": "^4.0.1",
+    "postcss-nested": "^6.0.0",
     "prettier": "2.7.1",
-    "pretty-quick": "^3.1.3",
+    "pretty-quick": "3.1.3",
     "react-test-renderer": "18.2.0",
     "typescript": "4.8.4",
     "vite": "3.1.0",
-    "vitest": "0.24.3",
-    "vite-tsconfig-paths": "^3.5.2"
+    "vite-tsconfig-paths": "3.5.2",
+    "vitest": "0.24.3"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
