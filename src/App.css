@@ -56,16 +56,16 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  & .motto {
+    min-width: 250px;
+    min-height: 100px;
+    background: url('./assets//graphics/motto.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 .read-the-docs {
   color: #888;
-}
-
-.motto {
-  min-width: 250px;
-  min-height: 100px;
-  background: url('./assets//graphics/motto.png');
-  background-repeat: no-repeat;
-  background-size: contain;
 }
