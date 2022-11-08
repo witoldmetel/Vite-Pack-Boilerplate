@@ -13,12 +13,4 @@ export default defineConfig({
       plugins: [require('autoprefixer'), require('postcss-import'), require('postcss-nested')],
     },
   },
-  test: {
-    globals: true,
-    environment: 'jsdom',
-    setupFiles: './src/utils/test-setup.tsx',
-    // you might want to disable it, if you don't have tests that rely on CSS
-    // since parsing CSS is slow
-    css: true,
-  },
 });
