@@ -4,6 +4,10 @@ This is a minimal boilerplate using React and TypeScript along with Vite and Vit
 
 In case of issues and questions, feel free to add the question in [Issues](https://github.com/witoldmetel/Vite-Pack-Boilerplate/issues) page.
 
+# Status
+
+[![.github/workflows/test.yml](https://github.com/witoldmetel/Vite-Pack-Boilerplate/actions/workflows/test.yml/badge.svg)](https://github.com/witoldmetel/Vite-Pack-Boilerplate/actions/workflows/test.yml)
+
 # Built-in dependencies
 
 - [Why Vite?](https://www.youtube.com/watch?v=DkGV5F4XnfQ)
