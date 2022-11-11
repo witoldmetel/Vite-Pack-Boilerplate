@@ -18,7 +18,7 @@ In case of issues and questions, feel free to add the question in [Issues](https
 
 # Demo Page
 
-TBA
+https://witoldmetel.github.io/Vite-Pack-Boilerplate/
 
 # Usage
 
