@@ -34,18 +34,6 @@ Run dev server
 yarn dev
 ```
 
-Remove develop's assets and cache
-
-```
-yarn clean
-```
-
-Lint code
-
-```
-yarn lint
-```
-
 Run unit tests
 
 ```
