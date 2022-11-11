@@ -5,7 +5,6 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview --port 8080",
     "prepare": "husky install",
     "test": "vitest",
     "test:ui": "vitest --ui",
