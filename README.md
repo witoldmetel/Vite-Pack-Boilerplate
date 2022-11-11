@@ -8,6 +8,8 @@ In case of issues and questions, feel free to add the question in [Issues](https
 
 [![.github/workflows/test.yml](https://github.com/witoldmetel/Vite-Pack-Boilerplate/actions/workflows/test.yml/badge.svg)](https://github.com/witoldmetel/Vite-Pack-Boilerplate/actions/workflows/test.yml)
 
+[![pages-build-deployment](https://github.com/witoldmetel/Vite-Pack-Boilerplate/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/witoldmetel/Vite-Pack-Boilerplate/actions/workflows/pages/pages-build-deployment)
+
 # Built-in dependencies
 
 - [Why Vite?](https://www.youtube.com/watch?v=DkGV5F4XnfQ)
