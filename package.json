@@ -1,11 +1,11 @@
 {
   "name": "vite-pack-boilerplate",
   "version": "1.0.0",
-  "description": "Starter pack for building TypeScript apps",
+  "description": "Starter pack for building React and TypeScript apps",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
+    "preview": "vite preview --port 8080",
     "prepare": "husky install",
     "test": "vitest",
     "test:ui": "vitest --ui",
@@ -13,12 +13,12 @@
     "lint": "eslint --ext .js,.ts,.jsx,.tsx src",
     "lint:fix": "eslint --fix --ext .js,.ts,.jsx,.tsx src",
     "format": "yarn run lint --fix & yarn prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
-    "watch:css": "postcss src/input.css -o dist/style.css -w",
-    "build:css": "postcss src/input.css -o dist/style.css"
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -b master -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/witoldmetel/TS-Parcel-Boilerplate.git"
+    "url": "git+https://github.com/witoldmetel/Vite-Pack-Boilerplate.git"
   },
   "keywords": [
     "vite",
@@ -33,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/witoldmetel/Vite-Pack-Boilerplate/issues"
   },
-  "homepage": "",
+  "homepage": "https://witoldmetel.github.io/Vite-Pack-Boilerplate",
   "dependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -50,7 +50,7 @@
     "@typescript-eslint/parser": "5.41.0",
     "@vitejs/plugin-react": "2.1.0",
     "@vitest/ui": "0.24.3",
-    "autoprefixer": "^10.4.13",
+    "autoprefixer": "10.4.13",
     "eslint": "8.9.0",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-prettier": "8.4.0",
@@ -59,6 +59,7 @@
     "eslint-plugin-react": "7.27.0",
     "eslint-plugin-security": "1.4.0",
     "eslint-plugin-simple-import-sort": "7.0.0",
+    "gh-pages": "4.0.0",
     "husky": "8.0.1",
     "jsdom": "20.0.1",
     "lint-staged": "13.0.3",
