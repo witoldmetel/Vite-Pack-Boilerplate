@@ -13,5 +13,5 @@ export default defineConfig({
       plugins: [require('autoprefixer'), require('postcss-import'), require('postcss-nested')],
     },
   },
-  base: '/Vite-Pack-Boilerplate/',
+  base: process.env.NODE_ENV === 'production' ? '/Vite-Pack-Boilerplate/' : './',
 });
