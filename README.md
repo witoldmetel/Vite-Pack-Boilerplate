@@ -51,16 +51,3 @@ Deploy page on GH-Pages
 ```
 yarn deploy
 ```
-
-if you receive this error message:
-
-```
-'gh-pages' is not recognized as an internal or external command,
-operable program or batch file.
-```
-
-You need to install gh-pages globally by adding "-g":
-
-```
-npm install -g gh-pages --save-dev
-```
